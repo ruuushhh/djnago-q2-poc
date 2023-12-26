@@ -1,10 +1,6 @@
-from django_q.tasks import async_task, schedule
 from django_q.models import Schedule
 from datetime import datetime
 
-# Import tasks for your specific logic
-from .import_functions import import_data  # Replace with your actual import function
-from .export_functions import export_data  # Replace with your actual export function
 
 # Function to add a task to the import_tasks cluster
 def add_import_task():
